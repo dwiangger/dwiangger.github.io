@@ -1,8 +1,279 @@
-<html>
-    <head>
-        <title>Dwi Angger</title>
-    </head>
-    <body>
-        teest
-    </body>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dwi Angger Rustanto</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <style>
+        .img-rounded{
+            max-height: 180px;
+        }
+        .navbar-default .navbar-nav > li > a {
+            font-weight:bold;
+        }
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+            color: #666;
+            background-color: #E4E4E4;
+        }
+        .backgroundHeader {
+            background: url(Content/images/Apotop.jpg) no-repeat;
+            height: 655px;
+        }
+
+        .navbar-default {
+            background: RGBA(255,255,255,0.5);
+            border-color: #e7e7e7;
+        }
+
+        .title {
+            margin-top: 250px;
+            text-align: center;
+            font-family: Oxygen,sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 1px 0px 10px rgba(0,0,0,.5);
+        }
+
+        .btn-hireMe {
+            background-color: RGBA(255,255,255,0.8);
+            /*border-color: #FFF;*/
+            color: #555;
+            padding: 10px 20px;
+            font-weight: bold;
+             margin-top: 20px;
+        }
+
+            .btn-hireMe:hover {
+                background-color: RGBA(255,255,255,0.5);
+                color: #fff;
+               
+            }
+
+        .content-about {
+            background-color: #ebebeb;
+            color: #555;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .content-contact {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #0094ff;
+            color: #fff;
+        }
+
+        .content-project {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ebebeb;
+            color: #555;
+        }
+        .content-experience {
+            background-color: #fff;
+            color: #555;
+            text-align: center;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Portofolio</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--<ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>-->
+                    <ul class="nav navbar-nav navbar-right " id="main-nav">
+                        <li><a href="#" class="scroll-link" data-id="home">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">About</a></li>
+                        <li><a href="#" class="scroll-link" data-id="skill">Skill</a></li>
+                        <li><a href="#" class="scroll-link" data-id="experience">Experience</a></li>
+                        <li><a href="#" class="scroll-link" data-id="work">Latest Works</a></li>
+                        <li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    <div class="col-xs-12 backgroundHeader" id="home">
+        
+        <section class="container" style="text-align: center;">
+            <h1 class="title">Dwi Angger Rustanto</h1>
+            <h2 style="color: #fff; text-shadow: 1px 0px 10px rgba(0,0,0,.5);">Web & Mobile Developer</h2>
+        </section>
+    </div>
+
+    <div id="about" class="col-xs-12 content-experience">
+        <h3 style="line-height: 30px; font-style:italic;">I also provide custom design and development
+            <br />
+            to create a website, software and native mobile apps that fits your exact needs.
+            <br />
+            Get in touch for a quote!
+        </h3>
+    </div>
+
+    <div id="skill" class="col-xs-12 content-project">
+        <h2 style="letter-spacing: 1px; font-weight: 700; margin-bottom:40px;">What I can do?</h2>
+        <div class="col-md-6" style="text-align:justify; padding-right:10px;">
+            <dl>
+              <dt>Web Developer</dt>
+              <dd>Build a website application and company profile using base language .Net MVC, PHP
+                  or using CMS Joomla, Wordpress, razorCMS
+                  with database MySQL or SQL Server. 
+                  Combine with JSON and Angular to communication data make your website fast and powerfull.</dd>
+            </dl>
+            <dl>
+              <dt>Front End Developer</dt>
+              <dd>Make your website design beautiful and elegan using css3 and javascript with Bootstrap Framework, Zurb Foundation,
+                  Jquery UI and other.
+              </dd>
+            </dl>
+        </div>
+        <div class="col-md-6" style="text-align:justify;">
+            <dl>
+              <dt>Mobile Developer (Native)</dt>
+              <dd>Convert your website application to mobile application (native) and publish to Play Store or Apps Store.</dd>
+            </dl>
+            <dl>
+              <dt>Troubleshooting & Networking</dt>
+              <dd>Maintenance Computer, LAN, WAN, Configure Access Point and Router board.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="col-xs-12 content-experience" id="experience">
+        <h2 style="letter-spacing: 3px; font-weight: 700;">EXPERIENCE</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3>Arvinda Jaya Abadi</h3>
+                        <p>IT Staff / Surabaya, Id / June 2011 - December 2011</p>
+                    </header>
+                    <p>
+                        Work as a IT Staff. Troubleshooting computer hardware and networking using microtic router board.
+                        And Maintenance ND5 Distribution software.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3>Necessity Indonesia</h3>
+                        <p>IT Staff / East Java, Id / January 2012 - June 2012</p>
+                    </header>
+                    <p>
+                        Necessity Indonesia is manufactur industry for baby diapers, I am working as IT Staff, build networking area and
+                        CCTV Server.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3>Cebes Indonesia</h3>
+                        <p>Software Developer / East Java, Id / Juli 2012 - Current</p>
+                    </header>
+                    <p>
+                       Work as a full-time web developer and working in few long term projects. 
+                       Working several project such as Citilink & Air Asia API, Travel Website,
+                       Project Management, Map visualization and other.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3>Pillar Network</h3>
+                        <p>Innovation And Creative Technology / East Java, Id / February 2014 - Current</p>
+                    </header>
+                    <p>
+                        Build some mobile native apps and portal website (coowey news, idkurs, popullist, project management).
+                    </p>
+                </article>
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-xs-12 content-project" id="work" >
+        <h2 style="letter-spacing: 3px; font-weight: 700; margin-bottom: 40px;">LATEST WORK</h2>
+        <img src="/Content/images/fellowork.jpg" class="img-rounded" alt="fellowork"/>
+        <img src="/Content/images/coowey.jpg" class="img-rounded" alt="fellowork"/>
+        <img src="/Content/images/populist.jpg" class="img-rounded" alt="fellowork"/>
+        <img src="/Content/images/kurs.png" class="img-rounded" alt="fellowork"/>
+    </div>
+    <div class="col-xs-12 content-contact" id="contact">
+        <h2 style="letter-spacing: 3px; font-weight: 700;">CONTACT</h2>
+        <h4 style="margin-bottom: 30px;">I am currently accepting new client projects. I look forward to serving you.</h4>
+        <div class="col-md-6" style="text-align: right; font-size: 16px;">
+            <strong>Dwi Angger Rustanto</strong><br>
+            dwiangger@hotmail.com<br>
+            Web Developer
+        </div>
+        <div class="col-md-6" style="text-align: left; font-size: 16px;">
+            <address>
+              <strong>Pondok Sidokare Asri BR 22</strong><br>
+              Sidoarjo, Jawa Timur<br>
+              Indonesia<br>
+              <abbr title="Phone">P:</abbr> 0857 3104 0514
+            </address>
+        </div>
+    </div>
+</body>
 </html>
+<script>
+    function scrollToID(id, speed) {
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({ scrollTop: targetOffset }, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    $(function () {
+        $('.scroll-link').on('click', function (event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+
+    });
+
+</script>
