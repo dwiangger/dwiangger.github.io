@@ -1,58 +1,93 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>Dwi Angger Rustanto</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <style>
-        .img-rounded{
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #333;
+        }
+
+        *,
+        ::after,
+        ::before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .img-rounded {
             max-height: 180px;
         }
-        .navbar-default .navbar-nav > li > a {
-            font-weight:bold;
+
+        .navbar-default .navbar-nav>li>a {
+            /* font-weight:bold; */
+            color: #000;
         }
-        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-            color: #666;
-            background-color: #E4E4E4;
-        }
-        .backgroundHeader {
-           background: url(Content/images/Untitled.png) no-repeat #3BAFDA;
-            height: 545px;
-            background-position: center;
-            margin-top:50px;
+
+        .navbar{
+            box-shadow: 1px 0px 10px #c7c4c4;
         }
 
         .navbar-default {
-/*            background: RGBA(255,255,255,0.5);*/
+            background-color: #fff;
+            border: 0 transparent;
+        }
+
+        .navbar-default .navbar-brand {
+            color: #0077ff;
+            /* text-shadow: 1px 0px 2px rgba(0,0,0,.5); */
+        }
+
+        .navbar-default .navbar-nav>li>a:hover,
+        .navbar-default .navbar-nav>li>a:focus {
+            color: #fff;
+            background-color: #0077ff;
+        }
+
+        .backgroundHeader {
+            background: url(Content/images/Workspace3.png) no-repeat rgba(241, 243, 252, .5);
+            height: 545px;
+            background-position: center;
+            margin-top: 50px;
+        }
+
+        .navbar-default {
+            /*            background: RGBA(255,255,255,0.5);*/
             border-color: #e7e7e7;
         }
 
         .title {
             margin-top: 250px;
             text-align: center;
-            font-family: Oxygen,sans-serif;
+            font-family: Oxygen, sans-serif;
             font-weight: bold;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #fff;
-            text-shadow: 1px 0px 10px rgba(0,0,0,.5);
+            text-shadow: 1px 0px 10px rgba(0, 0, 0, .5);
         }
 
         .btn-hireMe {
-            background-color: RGBA(255,255,255,0.8);
+            background-color: RGBA(255, 255, 255, 0.8);
             /*border-color: #FFF;*/
             color: #555;
             padding: 10px 20px;
             font-weight: bold;
-             margin-top: 20px;
+            margin-top: 20px;
         }
 
-            .btn-hireMe:hover {
-                background-color: RGBA(255,255,255,0.5);
-                color: #fff;
-               
-            }
+        .btn-hireMe:hover {
+            background-color: RGBA(255, 255, 255, 0.5);
+            color: #fff;
+
+        }
 
         .content-about {
             background-color: #ebebeb;
@@ -64,213 +99,221 @@
         .content-contact {
             text-align: center;
             padding: 30px 20px;
-            background-color: #3BAFDA;
+            background-color: #1050ff;
             color: #fff;
         }
 
         .content-project {
             text-align: center;
             padding: 30px 20px;
-            background-color: #ebebeb;
-            color: #555;
+            background-color: rgb(248, 249, 253);
+            color: #333;
         }
+
         .content-experience {
+            /* background: url(Content/images/standing-desk.svg) no-repeat;
+            background-position: center; */
             background-color: #fff;
-            color: #555;
+            color: #637280;
             text-align: center;
             padding: 30px 20px;
         }
+
+        dd {
+            color: #637280;
+        }
+
+        .experience h3 {
+            color: #000;
+        }
+
+        #about {
+            background-color: #fff;
+            color: #637280;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .content-project img.img-rounded {
+            height: 180px;
+    width: 300px;
+                box-shadow: 1px 1px 10px #cecece;
+            margin: 5px;
+        }
     </style>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9488471476871268",
-        enable_page_level_ads: true
-      });
-    </script>
 </head>
+
 <body>
     <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
-            <div class="col-xs-12">
-                <div class="container">
+        <div class="col-xs-12">
+            <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Portofolio</a>
-                    </div>
-    
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <!--<ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>-->
-                        <ul class="nav navbar-nav navbar-right " id="main-nav">
-                            <li><a href="#" class="scroll-link" data-id="home">Home</a></li>
-                            <li><a href="#" class="scroll-link" data-id="about">About</a></li>
-                            <li><a href="#" class="scroll-link" data-id="skill">Skill</a></li>
-                            <li><a href="#" class="scroll-link" data-id="experience">Experience</a></li>
-                            <li><a href="#" class="scroll-link" data-id="work">Latest Works</a></li>
-                            <li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dwi Angger Rustanto</a>
                 </div>
-                <!-- /.navbar-collapse -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right " id="main-nav">
+                        <li>
+                            <a href="#" class="scroll-link" data-id="home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link" data-id="about">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link" data-id="skill">Skill</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link" data-id="experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link" data-id="work">Latest Works</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link" data-id="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class="col-xs-12 backgroundHeader" id="home">
-        
-        <section class="container" style="text-align: center;">
-            <h1 class="title">Dwi Angger Rustanto</h1>
-            <h2 style="color: #fff; text-shadow: 1px 0px 10px rgba(0,0,0,.5);">Web & Mobile Developer</h2>
+
+        <section class="container text-center">
+            <h2 style="color: #0077ff; text-shadow: 1px 0px 2px rgba(0,0,0,.5);margin-top:125px;">Software Developer</h2>
         </section>
     </div>
 
-    <div id="about" class="col-xs-12 container content-experience">
-        
+    <div id="about" class="col-xs-12 container">
+
         <h3 style="line-height: 30px; font-style:italic;">I also provide custom design and development
-            <br />
-            to create a website, software and native mobile apps that fits your exact needs.
-            <br />
-            Get in touch for a quote!
+            <br /> to create a website, software and mobile apps that fits your exact needs.
+            <br /> Get in touch for a quote!
         </h3>
     </div>
 
     <div id="skill" class="col-xs-12 content-project">
         <div class="container">
-            <h2 style="letter-spacing: 1px; font-weight: 700; margin-bottom:40px;">What I can do?</h2>
+            <h2 style="font-weight: 600; margin-bottom:40px;  color: #07f;">What I can do?</h2>
             <div class="col-md-6" style="padding-right:10px; text-align:justify;">
-                <dl>
-                  <dt>Web Developer</dt>
-                  <dd>Build a website application and company profile using base language .Net MVC, PHP
-                      or using CMS Joomla, Wordpress, razorCMS
-                      with database MySQL or SQL Server. 
-                      Combine with JSON and Angular to communication data make your website fast and powerfull.</dd>
-                </dl>
-                <dl>
-                  <dt>Front End Developer</dt>
-                  <dd>Make your website design beautiful and elegan using css3 and javascript with Bootstrap Framework, Zurb Foundation,
-                      Jquery UI and other.
-                  </dd>
-                </dl>
+                <img src="Content/images/standing-desk.svg" class="img-responsive" />
             </div>
             <div class="col-md-6" style=" text-align:justify">
                 <dl>
-                  <dt>Mobile Developer (Native)</dt>
-                  <dd>Convert your website application to mobile application and publish to Play Store.</dd>
+                    <dt>Web Developer</dt>
+                    <dd>Build a website application and company profile using base language .Net MVC, PHP or using CMS Joomla,
+                        Wordpress, razorCMS with database MySQL or SQL Server. Combine with JSON and Angular to communication
+                        data make your website fast and powerfull.</dd>
                 </dl>
                 <dl>
-                  <dt>Troubleshooting & Networking</dt>
-                  <dd>Maintenance Computer, LAN, WAN, Configure Access Point and Router board.</dd>
+                    <dt>Front End Developer</dt>
+                    <dd>Make your website design beautiful and elegan using css3 and javascript with Bootstrap Framework, Zurb
+                        Foundation, Jquery, Angular, Materializecss, propeller and other.
+                    </dd>
+
+                    <dt>Mobile Developer (Native)</dt>
+                    <dd>Convert your website application to mobile application and publish to Play Store.</dd>
+                </dl>
+                <dl>
+                    <dt>Troubleshooting & Networking</dt>
+                    <dd>Maintenance Computer, LAN, WAN, Configure Access Point and Router board.</dd>
                 </dl>
             </div>
         </div>
     </div>
     <div class="col-xs-12 content-experience" id="experience">
-        <h2 style="letter-spacing: 3px; font-weight: 700;">EXPERIENCE</h2>
+        <h2 style=" font-weight: 600;   margin-bottom: 40px;   color: #07f;">Experience</h2>
         <div class="container">
-            <div class="col-md-4">
+            <div class="col-md-6 text-left">
                 <article class="experience">
-                    <header>
-                        <h3>Arvinda Jaya Abadi</h3>
-                        <p>IT Staff / Surabaya, Id / June 2011 - December 2011</p>
-                    </header>
+                    <h3>PT. Arvinda Jaya Abadi</h3>
                     <p style="text-align:justify;">
-                        Work as a IT Staff. Troubleshooting computer hardware and networking using microtic router board.
+                        IT Staff / Surabaya, Id / June 2011 - December 2011
+                        <br> Work as a IT Staff. Troubleshooting computer hardware and networking using microtic router board.
                         And Maintenance ND5 Distribution software.
                     </p>
                 </article>
-            </div>
-            <div class="col-md-4">
                 <article class="experience">
-                    <header>
-                        <h3>Necessity Indonesia</h3>
-                        <p>IT Staff / East Java, Id / January 2012 - June 2012</p>
-                    </header>
+
+                    <h3>PT. Necessity Indonesia</h3>
+
                     <p style="text-align:justify;">
-                        Necessity Indonesia is manufactur industry for baby diapers, I am working as IT Staff, build networking area and
-                        CCTV Server.
+                        IT Staff / East Java, Id / January 2012 - June 2012
+                        <br> Necessity Indonesia is manufactur industry for baby diapers, I am working as IT Staff, build networking
+                        area and CCTV Server.
+                    </p>
+                </article>
+                <article class="experience">
+
+                    <h3>CV. Pillar Network</h3>
+
+                    <p style="text-align:justify;">
+                        Web Developer (Remote) / East Java, Id / August 2013 - March 2016
+                        <br> Build android apps like exchange rate, BPJS Faskes Finder & Project Management
+                    </p>
+                </article>
+                <article class="experience">
+
+                    <h3>Catalyze Communications</h3>
+
+                    <p style="text-align:justify;">
+                        Web Developer Consultant (Remote) / East Java, Id / October 2014 - July 2015
+                        <br> Build website for WWF Panda and RSPO organization
+                    </p>
+                </article>
+                <article class="experience">
+                    <h3>PT. Cebes Indonesia</h3>
+                    <p style="text-align:justify;">
+                        Software Developer / East Java, Id / Juli 2012 - Current
+                        <br> Work as a full-time web developer and working in few long term projects. Working several project
+                        such as Citilink & Air Asia API, Travel Website, Project Management, Map visualization and other.
                     </p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="experience">
-                    <header>
-                        <h3>Cebes Indonesia</h3>
-                        <p>Software Developer / East Java, Id / Juli 2012 - Current</p>
-                    </header>
-                    <p style="text-align:justify;">
-                       Work as a full-time web developer and working in few long term projects. 
-                       Working several project such as Citilink & Air Asia API, Travel Website,
-                       Project Management, Map visualization and other.
-                    </p>
-                </article>
+            <div class="col-md-6">
+                <img src="Content/images/lab.svg" class="img-responsive" />
             </div>
-            <div class="col-md-4">
-                <article class="experience">
-                    <header>
-                        <h3>Pillar Network</h3>
-                        <p>Innovation And Creative Technology / East Java, Id / February 2014 - Current</p>
-                    </header>
-                    <p style="text-align:justify;">
-                        Build some mobile apps and portal website (coowey.com, idkurs.com, popullist, project management, tiket2go.com).
-                    </p>
-                </article>
-            </div>
-           
         </div>
     </div>
-    <div class="col-xs-12 content-project" id="work" >
+    <div class="col-xs-12 content-project" id="work">
         <div class="container">
             <h2 style="letter-spacing: 3px; font-weight: 700; margin-bottom: 40px;">LATEST WORK</h2>
-            <img src="Content/images/fellowork.jpg" class="img-rounded" alt="fellowork"/>
-            <img src="Content/images/coowey.jpg" class="img-rounded" alt="fellowork"/>
-            <img src="Content/images/populist.jpg" class="img-rounded" alt="fellowork"/>
-            <img src="Content/images/kurs.png" class="img-rounded" alt="fellowork"/>
+            <img src="Content/images/fellowork.jpg" class="img-rounded" alt="fellowork" />
+            <img src="Content/images/coowey.jpg" class="img-rounded" alt="fellowork" />
+            <img src="Content/images/populist.jpg" class="img-rounded" alt="fellowork" />
+            <img src="Content/images/kurs.png" class="img-rounded" alt="fellowork" />
+            <img src="Content/images/geoviewer.png" class="img-rounded" alt="fellowork" />
+            <img src="Content/images/dst.png" class="img-rounded" alt="fellowork" />
         </div>
     </div>
     <div class="col-xs-12 content-contact" id="contact">
         <h2 style="letter-spacing: 3px; font-weight: 700;">CONTACT</h2>
         <h4 style="margin-bottom: 30px;">I am currently accepting new client projects. I look forward to serving you.</h4>
         <div class="col-md-6" style="text-align: right; font-size: 16px;">
-            <strong>Dwi Angger Rustanto</strong><br>
-            dwiangger@hotmail.com<br>
-            Web Developer
+            Dwi Angger Rustanto
+            <br> dwiangger@hotmail.com
+            <br> Software Developer
         </div>
         <div class="col-md-6" style="text-align: left; font-size: 16px;">
             <address>
-              <strong>Pondok Sidokare Asri BR 22</strong><br>
-              Sidoarjo, Jawa Timur<br>
-              Indonesia<br>
-              <abbr title="Phone">P:</abbr> 0857 3104 0514
+                Pondok Sidokare Asri BR 22
+                <br> Sidoarjo, Jawa Timur
+                <br> Indonesia
+                <br>
+                <abbr title="Phone">P:</abbr> 0852 3104 0514
             </address>
         </div>
     </div>
 </body>
+
 </html>
 <script>
     function scrollToID(id, speed) {
